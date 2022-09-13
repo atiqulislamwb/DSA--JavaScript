@@ -1,0 +1,6 @@
+1.its important to have a precise vocabulary to talk about how our code perform......
+2.Useful for discussing trade off between different approaches,
+3.When your code slows down or crashes , identifying parts of the code that are inefficient can help us find pain points in our application......
+
+
+
