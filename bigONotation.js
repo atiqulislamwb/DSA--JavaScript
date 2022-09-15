@@ -87,3 +87,25 @@ function logAtMost5(n) {
   }
 }
 logAtMost5(5);
+
+//Bog O Of Object ------------>
+//Insertion O(1)
+//Removal O(1)
+//Searching O(n)
+//Access O(1)
+
+//Object.keys && Object.values && Object.entries --> O(n)
+
+//Big o of Array---------->
+//Searching O(n)
+//Access O(1)
+
+//Big o of Array method---------->
+//pop O(1)
+//push O(1)
+//shift O(n)
+//unshift O(n)
+//concat O(n)
+//slice O(n)
+//sort O(n * log n)
+//forEach / map / filter/ reduce ---> O(n)
