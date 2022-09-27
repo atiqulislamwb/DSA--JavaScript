@@ -4,7 +4,7 @@
   "description": "DSA with JavaScript",
   "main": "bigONotation.js",
   "scripts": {
-    "start": "nodemon problemSolving.js",
+    "start": "nodemon recursion.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
