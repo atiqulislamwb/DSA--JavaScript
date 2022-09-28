@@ -57,6 +57,7 @@ function sumRange(num) {
 console.log(sumRange(5));
 
 //using recursive function
+//factorial recursive functions
 function factorial(num) {
   if (num === 1) return 1;
   return num * factorial(num - 1);
@@ -110,3 +111,76 @@ function collectOddValues(arr) {
 console.log(collectOddValues([1, 2, 3, 4, 5, 67, 8, 9, 0]));
 
 //More recursive function for problem solve
+//power problem solve with recursive function
+function power(base, exponent) {
+  if (exponent === 0) {
+    return 1;
+  } else {
+    return base * power(base, exponent - 1);
+  }
+}
+console.log(power(5, 3));
+
+//range of number
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+    return [startNum];
+  } else {
+    var numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+console.log(rangeOfNumbers(10, 20));
+
+// Time complexity O(2^n)
+function fibonacci(num) {
+  if (num < 2) return num;
+  return fibonacci(num - 2) + fibonacci(num - 1);
+}
+
+console.log(fibonacci(9));
+//reverse recursive function
+let data = [5, 12, 65, 89, 0, 100];
+let temp;
+function reverse(data, start, end) {
+  if (start <= end) {
+    temp = data[start];
+    data[start] = data[end];
+    data[end] = temp;
+    reverse(data, start + 1, end - 1);
+    return data;
+  }
+}
+//built in
+const arr = ["one", "two", "three"];
+arr.reverse();
+console.log(arr); // [ "three", "two", "one" ]
+
+//checkPalindrome
+function checkPalindrome(str) {
+  if (str.length === 1) return true;
+  if (str.length === 2) return str[0] === str[1];
+  if (str[0] === str.slice(-1)) return checkPalindrome(str.slice(1, -1));
+  return false;
+}
+
+console.log(checkPalindrome("aa")); // true
+console.log(checkPalindrome("russell")); // false
+console.log(checkPalindrome("rotor")); // true
+//capitalize
+
+const arr1 = ["apple", "banana", "orange", "grapes"];
+const capitalize = (arr = [], ind = 0) => {
+  const helper = (str = "") => {
+    return str[0].toUpperCase() + str.slice(1).toLowerCase();
+  };
+  if (ind < arr.length) {
+    arr[ind] = helper(arr[ind]);
+    return capitalize(arr, ind + 1);
+  }
+  return;
+};
+capitalize(arr1);
+console.log(arr1);
