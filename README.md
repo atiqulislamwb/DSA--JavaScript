@@ -1,2 +1,2 @@
-# Data Structure & Algorithom -- JavaScript language
+# Data Structure & Algorithms -- JavaScript language
 
