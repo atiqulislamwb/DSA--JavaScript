@@ -1,3 +1,5 @@
+//time complexity O(n^2)--> worst case
+
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
     let currentElement = arr[i];
@@ -13,3 +15,5 @@ function insertionSort(arr) {
 }
 
 console.log(insertionSort([12, 2, 3, 1, 77, 65, 89, 900, 55]));
+
+//comparing bubble, selection , insertion sorting algorithm
