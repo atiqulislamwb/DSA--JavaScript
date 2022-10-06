@@ -1,0 +1,53 @@
+Data structure----> Data Structures are collections of values , the relationship
+among them,and the function or operations that can be applied to the data...
+
+//different data structure need to solve different problems
+
+**Working with map/location ---> graph structure
+**Working with fast inserts/removal at the beginning and end---> linked list structure
+**Working with scraping web data in HTML ---> tree structure
+**Write a Scheduler ---> binary heap structure
+
+
+
+class Student{
+    constructor(firstName, lastName,year){
+     this.firstName = firstName;
+     this.lastName = lastName;
+     this.year = year;
+     this.late=0;
+     this.scores=[];
+    }
+    fullName(){
+     return `your full name is ${this.firstName} ${this.lastName}`
+    }
+    markLate(){
+     this.late += 1;
+     if(this.late >= 4){ return "You are expelled"}
+     return `${this.firstName} ${this.lastName} has been late ${this.late} times`
+    }
+    addScore(score){
+     this.scores.push(score)
+     return this.scores
+    }
+    calculateAverageScore(){
+    let sum = this.scores.reduce((a,b)=> a+b, 0)
+     return sum/scores.length ;
+    }
+   
+    static enrolledStudents(...students){
+      //maybe send an email here
+    }
+
+}
+
+//create object from classes
+
+let firstStudent = new Student("Atiqul", "Islam",4)
+let secondStudent = new Student("Blue", "Bird",3)
+firstStudent.fullName() // Atiqul Islam
+firstStudent.markLate()
+firstStudent.addScore(92,33,56,100)
+firstStudent.calculateAverageScore()
+Student.enrolledStudents() ---> Student call its self
+
