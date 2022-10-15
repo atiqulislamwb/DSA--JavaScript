@@ -1,8 +1,8 @@
 //Binary search tree (BST) has tow children from the root node ................
 //everything is left less than root and everything in right greater than root
 //Big O -->
-// 1.Insertion O(log n)
-// 2.Searching O(log n)
+// 1.Insertion O(log n)  --good
+// 2.Searching O(log n) --good
 
 class Node {
   constructor(value) {
